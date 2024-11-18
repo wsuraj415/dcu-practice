@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCU| Courses</title>
+
+<script>
+ function showCourseDetails() {
+      let course = prompt("Enter course (B.Tech, MCA, BCA):");
+      course === "BTech" ? alert("B.Tech: Bachelor of Technology") : 
+      course === "MCA" ? alert("MCA: Master of Computer Applications") : 
+      course === "BCA" ? alert("BCA: Bachelor of Computer Applications") : 
+      alert("Course not found.");
+    }
+</script>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #02293c;
+    }
+
+    .navbar h2 {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Hero section */
+    .hero {
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), 
+      url('/Uni/Media/bg-course\ .jpeg');
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    /* Courses section */
+    .courses {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .courses h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .course-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .course {
+      background-color: #f4f4f4;
+      width: 300px;
+      margin: 15px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .course img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .course-details {
+      padding: 20px;
+    }
+
+    .course-details h3 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .course-details p {
+      font-size: 16px;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2>Delhi City University</h2>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Dubai City University</h1>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses">
+
+<!-- javascript   ----------------------------------------- --> 
+
+    <h2 onclick="showCourseDetails()" >Courses We Offer</h2>
+    <div class="course-container">
+
+      <!-- Law Course -->
+      <div class="course">
+        <img src="/Uni/Media/law.jpeg" alt="Law Course">
+        <div class="course-details">
+          <h3>Law</h3>
+          <p>Explore the fundamentals of law, legal principles, and policies with our comprehensive law programs.</p>
+        </div>
+      </div>
+
+      <!-- MBA Course -->
+      <div class="course">
+        <img src="/Uni/Media/mba.jpeg" alt="MBA Course">
+        <div class="course-details">
+          <h3>MBA</h3>
+          <p>Our MBA program equips students with the skills needed for modern business management and leadership.</p>
+        </div>
+      </div>
+
+      <!-- B.Tech Course -->
+      <div class="course">
+        <img src="/Uni/Media/btech.jpeg" alt="B.Tech Course">
+        <div class="course-details">
+          <h3>B.Tech</h3>
+          <p>Join our B.Tech program to gain technical knowledge in engineering, technology, and innovation.</p>
+        </div>
+      </div>
+
+      <!-- Diploma Course -->
+      <div class="course">
+        <img src="/Uni/Media/diploma.jpeg" alt="Diploma Course">
+        <div class="course-details">
+          <h3>Diploma</h3>
+          <p>Our diploma courses offer practical skills and knowledge for various industries and sectors.</p>
+        </div>
+      </div>
+
+      <!-- Post Graduation Course -->
+      <div class="course">
+        <img src="/Uni/Media//post graduation.jpeg" alt="Post Graduation">
+        <div class="course-details">
+          <h3>Post Graduation</h3>
+          <p>Advance your career and academic journey with our diverse post-graduate programs.</p>
+        </div>
+      </div>
+
+
+
+          <!-- BBA Course -->
+          <div class="course">
+            <img src="/Uni/Media/bba.jpeg" alt="Post Graduation">
+            <div class="course-details">
+              <h3>BBA</h3>
+              <p>Focuses on business management, finance, marketing, and 
+            </p>
+            </div>
+          </div>
+
+
+
+
+
+              <!-- BSc Course -->
+      <div class="course">
+        <img src="/Uni/Media/bsc.jpeg" alt="Post Graduation">
+        <div class="course-details">
+          <h3>BSc</h3>
+          <p>Covers programming, algorithms, data structures, and artificial intelligence, aimed.</p>
+        </div>
+      </div>
+
+
+
+
+
+
+          <!-- B.Ed Course -->
+          <div class="course">
+            <img src="/Uni/Media/bed.jpeg" alt="Post Graduation">
+            <div class="course-details">
+              <h3>B.Ed</h3>
+              <p>Designed for aspiring teachers, this course covers teaching methodologies.</p>
+            </div>
+          </div>
+
+
+
+
+
+              <!-- BCA Course -->
+      <div class="course">
+        <img src="/Uni/Media/bca.jpeg" alt="Post Graduation">
+        <div class="course-details">
+          <h3>BCA</h3>
+          <p>Covers programming, algorithms, data structures, and artificial intelligence, aimed.</p>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+          <!-- MCA Course -->
+          <div class="course">
+            <img src="/Uni/Media/mca.jpeg" alt="Post Graduation">
+            <div class="course-details">
+              <h3>MCA</h3>
+              <p>Advance your career and academic journey with our diverse post-graduate programs.</p>
+            </div>
+          </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

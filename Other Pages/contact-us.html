@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - University</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+      }
+
+      /* Navbar Styles */
+      nav {
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        margin-top: -100px;
+        height: 50px;
+        box-sizing: border-box;
+      }
+
+      nav img {
+        width: 150px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-links ul {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav-links li {
+        margin-left: 20px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #f4a261;
+      }
+
+      .fa-bars,
+      .fa-close {
+        display: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+      }
+
+      /* Hero Section Styles */
+      .sub-header {
+        background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+          url("/Uni/Media/website\ -cover.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: white;
+        padding: 100px 0;
+        height: 500px;
+      }
+
+      .sub-header h1 {
+        font-size: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 150px;
+      }
+
+      /* Location Section */
+      .location {
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      .location iframe {
+        width: 720px;
+        height: 445px;
+        border: none;
+      }
+
+      /* Contact Us Section */
+      .contact-us {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+
+      .contact-us h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .contact-col {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+
+      .contact-col div {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        text-align: center;
+      }
+
+      .contact-col div i {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #f4a261;
+      }
+
+      .contact-col h5 {
+        font-size: 20px;
+        color: #333;
+      }
+
+      .contact-col p {
+        font-size: 14px;
+        color: #777;
+      }
+
+      .contact-list form input,
+      .contact-list form textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+
+      .contact-list form button {
+        width: 100%;
+        padding: 15px;
+        background-color: #f4a261;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .contact-list form button:hover {
+        background-color: #e76f51;
+      }
+
+      /* Footer Styles */
+      .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .footer h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .footer p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .footer .icons i {
+        font-size: 30px;
+        margin: 10px;
+        color: white;
+        transition: color 0.3s;
+      }
+
+      .footer .icons i:hover {
+        color: #f4a261;
+      }
+
+      .footer p i {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <section class="sub-header">
+      <nav>
+        <a href="/Uni/Main /index.html"><img src="/Uni/Media/logo.png" alt="Logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL"
+      ></iframe>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+      <h2>Get In Touch</h2>
+      <div class="contact-col">
+        <div>
+          <h5>Dubai City University</h5>
+          <p>123 Street, Dubai, UAE</p>
+        </div>
+        <div>
+          <h5>+971 123 456 789</h5>
+          <p>Monday to Saturday - 9:00 AM to 5:00 PM</p>
+        </div>
+        <div>
+          <h5>DCU@university.com</h5>
+          <p>Drop us an email with your queries</p>
+        </div>
+      </div>
+      <div class="contact-list">
+        <form method="post" action="#">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea
+            rows="8"
+            name="message"
+            placeholder="Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        We offer quality education and ensure the best learning experience for
+        students across various fields.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </section>
+  </body>
+</html>
